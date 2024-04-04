@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Events</title>
+    <meta charset="UTF-8" />
+</head>
+
+<body>
+    <h1>Events</h1>
+    <button>Show Temperature</button>
+
+    <script>
+        function showTemp() {
+            alert("It is 18 degrees");
+        }
+        let button = document.querySelector("button");
+            button.addEventListener("click", showTemp);
+            
+    </script>
+</body>
+
+</html>

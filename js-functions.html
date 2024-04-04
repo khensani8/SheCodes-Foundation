@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Functions</title>
+</head>
+<body>
+    <h1>JS Functions</h1>
+    <script>
+        function isWindy(speed, unit) {
+                if (speed > 5 && unit === "metric") {
+                    return true;
+                } else {
+                    return false;
+                }
+            }
+
+            isWindy(2, "imperial");
+            isWindy(20, "metric");
+</script>
+</body>
+</html>

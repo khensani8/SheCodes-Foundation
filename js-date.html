@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Dates</title>
+</head>
+<body>
+    <h1>JS Dates</h1>
+    <h2> Today is Wednesday, March 20, 2023</h2>
+    <script>
+      //JS Challenge 1
+        let now = new Date();
+        console.log(now);
+
+     
+
+        //JS Challenge 2
+        let millisecond = now.getMilliseconds();
+        console.log(millisecond);
+
+        //JS Challenge 3
+            let day = now.getDay();
+            let days = [
+                "Sunday",
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday",
+                "Saturday",
+            ];
+            console.log(days[day]);
+
+        //JS Challenge 4
+            let year = now.getFullYear();
+            console.log(year);
+
+        //JS Challenge 5
+        let month = now.getMonth();
+        let months = ["January", "Feburary", "March", "April", "May", "June", "July", "August", "September", "Ocotber", "November", "December"]
+        console.log(months[month]);
+
+        
+
+    </script>
+</body>
+</html>

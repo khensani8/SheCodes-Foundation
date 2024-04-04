@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Baking Addictions 🧁</title>
+    <style>
+        h1 {
+            text-align: center;
+            color: #C13031;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        h2 {
+            text-align: center;
+            border: 1px solid #C13031;
+            padding: 15px;
+            font-size: 18px;
+            font-style: Pacifico;
+            border-radius: 4px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        p {
+            line-height: 1.5;
+            font-size: 13px;
+            margin: 20px 0 10px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            padding: auto;
+        }
+
+        button {
+            display: block;
+            margin: 20px auto;
+            background: #C13031;
+            color: white;
+            font-size: 18px;
+            padding: 15px 20px;
+            border: none;
+            border-radius: 6px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+            transition: all 200ms ease-in-out;
+        }
+
+        button:hover {
+            opacity: 0.9;
+            cursor: pointer;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 15px 60px;
+            border-radius: 6px;
+        }
+
+        .learn-more {
+            color: #C13031;
+            text-decoration: none;
+            font-size: 12px;
+        }
+
+        .learn-more:hover {
+            text-decoration: underline;
+        }
+
+        .footer {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>I love baking!</h1>
+        <h2>Especially Red Velvet Cake</h2>
+        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/114/953/original/9295_red-velvet-cake_ddmfs_4x3_1129-a8ab17b825e3464a9a53ceeda54ff461.jpg?1707673660"
+            alt="Red Velvet Cake" />
+        <p>
+            <strong>Red velvet cake</strong>
+            is a rich and decadent dessert known for its moist and slightly dense texture, velvety crumb, and
+            striking deep red color. The flavor profile of a red velvet cake is often a balance of subtle cocoa
+            undertones with a
+            hint of tanginess from buttermilk, complemented by a sweet and creamy frosting, traditionally cream cheese
+            or
+            buttercream. The cake is typically layered and frosted generously, making it both visually appealing and
+            indulgent in
+            taste.
+        </p>
+        <a href="https://en.wikipedia.org/wiki/Red_velvet_cake" target="_blank" class="learn-more">
+            Learn more on Wikipedia
+        </a>
+        <button class="red-velvet-button">👉 Get Red Velvet Recipe</button>
+        <p class="footer">
+            This page was built by Khensani Ngobeni
+        </p>
+    </div>
+    <script>
+        document.querySelector('.red-velvet-button').addEventListener('click', function () {
+            let name = prompt('What is your name?');
+            let email = prompt('What is your email address?')
+
+            if (name.length) {
+                alert('Thanks, ' + name + ' , we will be in touch. I cannnot wait for you to start your baking journey with me!')
+            } else {
+                alert('No name, unforntunately you cannot start with your baking journey. Please give us your name')
+            }
+        });
+    </script>
+</body>
+
+</html>
